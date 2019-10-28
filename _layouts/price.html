@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ⚡ lang="{{ site.lang }}">
+
+<head prefix="og: http://ogp.me/ns#">
+    {% include metadata.html %}
+    {% include amp-project.html %}
+    {% include amp-accordion.html %} {% include amp-form.html %} {% include amp-sidebar.html %} {% include amp-boilerplate.html %} 
+    <script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
+    <style amp-custom>
+        {% include amp-custom-home.html %}
+    </style>
+</head>
+
+<body>
+    {% include nav.html %}
+    {{ content }}
+    {% include footer.html %}
+    {% include float-button.html %}
+</body>
+
+</html>

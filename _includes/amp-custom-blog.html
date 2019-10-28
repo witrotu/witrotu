@@ -1,0 +1,1336 @@
+/*
+  Theme Name: Avilon
+  Theme URL: https://bootstrapmade.com/avilon-bootstrap-landing-page-template/
+  Author: BootstrapMade.com
+  License: https://bootstrapmade.com/license/
+*/
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+body {
+    background: #fff;
+    color: #666666;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    color: #1dc8cd;
+    transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #1dc9ce;
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+h2,
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+
+
+/* Back to top button */
+
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+#header {
+    padding: 12px 0 15px 0;
+    height: 55px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+    background: linear-gradient(to bottom right, #371636, #371636);
+}
+
+#header #logo {
+    float: left;
+}
+
+@media (max-width: 768px) {
+    amp-sidebar {
+        background: #371635;
+        width: 100vw
+    }
+
+    amp-sidebar .menu-item {
+        border-bottom: solid 1px #3d84ce;
+        border-top: solid 1px #3d84ce;
+        color: #FFFFFF;
+        display: block;
+        position: relative;
+        text-transform: none
+    }
+
+    amp-sidebar .menu-item:hover {
+        background: #f9f9f9
+    }
+
+    amp-sidebar .item-layer-1 {
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 44px;
+        padding: 20px 35px 20px 25px
+    }
+
+    amp-sidebar .menu-layer::after {
+        background: #1c79c0;
+        bottom: 0;
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 13px
+    }
+
+    amp-sidebar .menu-layer .items {
+        left: 0;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        position: absolute;
+        right: 0
+    }
+
+    amp-sidebar .menu-layer.primary {
+        height: 100%;
+        position: relative
+    }
+
+    amp-sidebar .menu-layer.primary .items {
+        bottom: 80px;
+        top: 60px
+    }
+
+    amp-sidebar .close-button {
+        background: url(/img/close.svg) no-repeat center/18px transparent;
+        border: 0;
+        height: 58px;
+        position: absolute;
+        right: 13px;
+        top: 0;
+        width: 68px
+    }
+}
+
+
+
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+
+/*@media (min-width: 1024px) {
+    #intro {
+        background-attachment: fixed;
+    }
+}*/
+
+
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+
+/* Nav Menu Essentials */
+
+.nav-menu,
+.nav-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-menu li {
+    position: relative;
+    white-space: nowrap;
+}
+
+.nav-menu>li {
+    float: left;
+}
+
+
+
+/* Nav Menu Arrows */
+
+
+
+/* Nav Meu Container */
+
+#nav-menu-container {
+    float: right;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    #nav-menu-container {
+        display: none;
+    }
+}
+
+
+
+/* Nav Meu Styling */
+
+.nav-menu a {
+    padding: 0 8px 10px 8px;
+    text-decoration: none;
+    display: inline-block;
+    color: #FF5E8B;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    outline: none;
+}
+
+.nav-menu>li {
+    margin-left: 10px;
+}
+
+
+
+/* Mobile Nav Toggle */
+
+
+
+/* Mobile Nav Styling */
+
+
+
+/* Mobile Nav body classes */
+
+
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+
+
+/* Sections Header
+--------------------------------*/
+
+
+
+/* Section with background
+--------------------------------*/
+
+.section-bg {
+    background: #eff5f5;
+}
+
+
+
+/* About Us Section
+--------------------------------*/
+
+
+
+/* Product Featuress Section
+--------------------------------*/
+
+
+
+/* Product Advanced Featuress Section
+--------------------------------*/
+
+#advanced-features {
+    overflow: hidden;
+}
+
+#advanced-features .features-row {
+    padding: 60px 0 30px 0;
+}
+
+#advanced-features h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #000;
+}
+
+#advanced-features h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: italic;
+    color: #999;
+}
+
+#advanced-features p {
+    line-height: 24px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+#advanced-features .advanced-feature-img-right {
+    float: right;
+    padding: 0 0 30px 30px;
+    height: 341px;
+    width: 525px;
+    margin-left: 50px;
+}
+
+#advanced-features .advanced-feature-img-left {
+    float: left;
+    padding: 0 0 30px 30px;
+    height: 341px;
+    width: 525px;
+    margin-right: 50px;
+}
+
+@media (max-width: 768px) {
+    #advanced-features .advanced-feature-img-right,
+    #advanced-features .advanced-feature-img-left {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    #advanced-features .advanced-feature-img-right,
+    #advanced-features .advanced-feature-img-left {
+        max-width: 100%;
+        padding: 0 0 30px 0;
+        height: 251px;
+        width: 330px;
+        margin-bottom: 10px
+    }
+}
+
+
+
+/* Call To Action Section
+--------------------------------*/
+
+#call-to-action {
+    overflow: hidden;
+    background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2)), url(../img/background-2.webp) fixed center bottom;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+#call-to-action .cta-title {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+#call-to-action .cta-text {
+    color: #fff;
+}
+
+@media (min-width: 769px) {
+    #call-to-action .cta-btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+#call-to-action .cta-btn {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 25px;
+    transition: background 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+#call-to-action .cta-btn:hover {
+    background: #1dc8cd;
+    border: 2px solid #1dc8cd;
+}
+
+
+
+/* More Features Section
+--------------------------------*/
+
+
+
+/* Clients Section
+--------------------------------*/
+
+
+
+/* Pricing Section
+--------------------------------*/
+
+
+
+/* Frequently Asked Questions Section
+--------------------------------*/
+
+
+
+/* Our Team Section
+--------------------------------*/
+
+
+
+/* Gallery Section
+--------------------------------*/
+
+
+
+/* Contact Section
+--------------------------------*/
+
+#contact {
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+#contact .contact-about p {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Montserrat", sans-serif;
+    color: #888;
+}
+
+#contact .social-links {
+    padding-bottom: 20px;
+}
+
+#contact .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #fff;
+    color: #3F51B5;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    border: 1px solid #1dc8cd;
+}
+
+#contact .social-links a:hover {
+    background: #3F51B5;
+    color: #fff;
+}
+
+#contact .info {
+    color: #333333;
+}
+
+#contact .info i {
+    font-size: 32px;
+    color: #1dc8cd;
+    float: left;
+    line-height: 1;
+}
+
+#contact .info p {
+    padding: 0 0 10px 42px;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
+    background: #fff;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+#footer .credits {
+    font-size: 13px;
+    color: #888;
+}
+
+#footer .footer-links a {
+    color: #666;
+    padding-left: 15px;
+}
+
+#footer .footer-links a:first-child {
+    padding-left: 0;
+}
+
+#footer .footer-links a:hover {
+    color: #1dc8cd;
+}
+
+
+
+/*!
+ * Bootstrap v4.0.0 (https://getbootstrap.com)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+}
+
+footer,
+header,
+main,
+nav,
+section {
+    display: block;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+h2,
+h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+    color: #e5598a;
+    text-decoration: none;
+}
+
+button {
+    border-radius: 0;
+}
+
+button:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+button {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button {
+    overflow: visible;
+}
+
+button {
+    text-transform: none;
+}
+
+button,
+[type="reset"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+}
+
+::-webkit-file-upload-button {
+    font: inherit;
+    -webkit-appearance: button;
+}
+
+h2,
+h3 {
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-12,
+.col-md-4,
+.col-md-8,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-9 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .col-md-8 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-3 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-lg-4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .col-lg-5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+    .col-lg-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-lg-9 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.btn:not(:disabled):not(.disabled):active,
+.btn:not(:disabled):not(.disabled).active {
+    background-image: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active {
+    color: #fff;
+    background-color: #0062cc;
+    border-color: #005cbf;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active {
+    color: #fff;
+    background-color: #545b62;
+    border-color: #4e555b;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-secondary:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}
+
+.btn-success:not(:disabled):not(.disabled):active,
+.btn-success:not(:disabled):not(.disabled).active {
+    color: #fff;
+    background-color: #1e7e34;
+    border-color: #1c7430;
+}
+
+.btn-success:not(:disabled):not(.disabled):active:focus,
+.btn-success:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
+
+.btn-info:not(:disabled):not(.disabled):active,
+.btn-info:not(:disabled):not(.disabled).active {
+    color: #fff;
+    background-color: #117a8b;
+    border-color: #10707f;
+}
+
+.btn-info:not(:disabled):not(.disabled):active:focus,
+.btn-info:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+}
+
+.btn-warning:not(:disabled):not(.disabled):active,
+.btn-warning:not(:disabled):not(.disabled).active {
+    color: #212529;
+    background-color: #d39e00;
+    border-color: #c69500;
+}
+
+.btn-warning:not(:disabled):not(.disabled):active:focus,
+.btn-warning:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+}
+
+.btn-danger:not(:disabled):not(.disabled):active,
+.btn-danger:not(:disabled):not(.disabled).active {
+    color: #fff;
+    background-color: #bd2130;
+    border-color: #b21f2d;
+}
+
+.btn-danger:not(:disabled):not(.disabled):active:focus,
+.btn-danger:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+}
+
+.btn-light:not(:disabled):not(.disabled):active,
+.btn-light:not(:disabled):not(.disabled).active {
+    color: #212529;
+    background-color: #dae0e5;
+    border-color: #d3d9df;
+}
+
+.btn-light:not(:disabled):not(.disabled):active:focus,
+.btn-light:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+}
+
+.btn-dark:not(:disabled):not(.disabled):active,
+.btn-dark:not(:disabled):not(.disabled).active {
+    color: #fff;
+    background-color: #1d2124;
+    border-color: #171a1d;
+}
+
+.btn-dark:not(:disabled):not(.disabled):active:focus,
+.btn-dark:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active,
+.btn-outline-secondary:not(:disabled):not(.disabled).active {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-secondary:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active,
+.btn-outline-success:not(:disabled):not(.disabled).active {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active:focus,
+.btn-outline-success:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
+
+.btn-outline-info:not(:disabled):not(.disabled):active,
+.btn-outline-info:not(:disabled):not(.disabled).active {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-outline-info:not(:disabled):not(.disabled):active:focus,
+.btn-outline-info:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+}
+
+.btn-outline-warning:not(:disabled):not(.disabled):active,
+.btn-outline-warning:not(:disabled):not(.disabled).active {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-outline-warning:not(:disabled):not(.disabled):active:focus,
+.btn-outline-warning:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+}
+
+.btn-outline-danger:not(:disabled):not(.disabled):active,
+.btn-outline-danger:not(:disabled):not(.disabled).active {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-outline-danger:not(:disabled):not(.disabled):active:focus,
+.btn-outline-danger:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+}
+
+.btn-outline-light:not(:disabled):not(.disabled):active,
+.btn-outline-light:not(:disabled):not(.disabled).active {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.btn-outline-light:not(:disabled):not(.disabled):active:focus,
+.btn-outline-light:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+}
+
+.btn-outline-dark:not(:disabled):not(.disabled):active,
+.btn-outline-dark:not(:disabled):not(.disabled).active {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.btn-outline-dark:not(:disabled):not(.disabled):active:focus,
+.btn-outline-dark:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+}
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.page-link:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.close:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+}
+
+@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+}
+
+@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+}
+
+.align-middle {
+    vertical-align: middle ;
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+}
+
+.pt-2 {
+    padding-top: 0.5rem ;
+}
+
+@media (min-width: 992px) {
+    .pt-lg-0 {
+        padding-top: 0 ;
+    }
+}
+
+.text-center {
+    text-align: center ;
+}
+
+@media (min-width: 992px) {
+    .text-lg-left {
+        text-align: left ;
+    }
+    .text-lg-right {
+        text-align: right ;
+    }
+}
+
+.text-white {
+    color: #fff ;
+}
+
+@media print {
+    *,
+    *::before,
+    *::after {
+        text-shadow: none ;
+        box-shadow: none ;
+    }
+    a:not(.btn) {
+        text-decoration: underline;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+    @page {
+        size: a3;
+    }
+    body {
+        min-width: 992px ;
+    }
+    .container {
+        min-width: 992px ;
+    }
+}
+
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.2
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2017 Daniel Eden
+ */
+
+
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInLeft {
+    animation-name: fadeInLeft;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInRight {
+    animation-name: fadeInRight;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+
+
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+
+
+/* FONT PATH
+ * -------------------------- */
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../lib/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../lib/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../lib/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../lib/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../lib/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/* makes the font 33% larger relative to the icon container */
+
+
+
+/* Deprecated as of 4.4.0 */
+
+.pull-left {
+    float: left;
+}
+
+
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+
+.fa-facebook:before {
+    content: "\f09a";
+}
+
+.fa-instagram:before {
+    content: "\f16d";
+}
+
+/*!
+  Ionicons, v2.0.0
+  Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
+  https://twitter.com/benjsperry  https://twitter.com/ionicframework
+  MIT License: https://github.com/driftyco/ionicons
+
+  Android-style icons originally built by Google’s
+  Material Design Icons: https://github.com/google/material-design-icons
+  used under CC BY http://creativecommons.org/licenses/by/4.0/
+  Modified icons to fit ionicon’s grid from original.
+*/
+
+@font-face {
+    font-family: "Ionicons";
+    src: url("../lib/ionicons/fonts/ionicons.eot?v=2.0.0");
+    src: url("../lib/ionicons/fonts/ionicons.eot?v=2.0.0#iefix") format("embedded-opentype"), url("../lib/ionicons/fonts/ionicons.ttf?v=2.0.0") format("truetype"), url("../lib/ionicons/fonts/ionicons.woff?v=2.0.0") format("woff"), url("../lib/ionicons/fonts/ionicons.svg?v=2.0.0#Ionicons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* Magnific Popup CSS */
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+
+
+/* Main image in popup */
+
+
+
+/* The shadow behind the image */
+
+@media screen and (max-width: 800px) and (orientation: landscape),
+screen and (max-height: 300px) {
+    /**
+       * Remove all paddings around the image on small screen
+       */
+}
+
+@media (max-width: 768px) {
+    .amp-sidebar-toggle {
+        background-image: url(/img/menu.svg);
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-repeat: no-repeat;
+        background-size: 32px 48px;
+        background-position: center;
+        width: 55px;
+        height: 55px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+.z-depth-3 {
+    -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3)
+}
+
+.middle-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.text-white {
+    color: white
+}
+
+.vs-float-button {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 999
+}
+
+.vs-float-button .vs-float-whatsapp {
+    border-radius: 50%;
+    color: white;
+    -webkit-transition: all 250ms ease;
+    transition: all 250ms ease
+}
+
+.vs-float-button .vs-float-whatsapp:hover {
+    background: #5ccf54;
+    -webkit-transition: all 250ms ease;
+    transition: all 250ms ease
+}
+
+.vs-float-button .vs-float-whatsapp:hover a {
+    color: white
+}
+
+@media screen and (max-width:39.9375em) {
+    .vs-float-button {
+        right: 12px
+    }
+}
+
+@media screen and (max-width:39.9375em) {
+    .on-phone {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+}
+
+@media screen and (min-width:64em) {
+    .on-phone {
+        display: none
+    }
+}
+
+@media screen and (min-width:40em) and (max-width:63.9375em) {
+    .on-phone {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+}
+
+@media screen and (max-width:39.9375em) {
+    .on-desktop {
+        display: none
+    }
+}
+
+@media screen and (min-width:64em) {
+    .on-desktop {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+}
+
+@media screen and (min-width:40em) and (max-width:63.9375em) {
+    .on-desktop {
+        display: none
+    }
+}

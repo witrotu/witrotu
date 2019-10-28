@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ⚡ lang="{{ site.lang }}">
+
+<head prefix="og: http://ogp.me/ns#">
+    {% include metadata.html %}
+    <script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
+    {% include amp-project.html %}
+    {% include amp-accordion.html %} {% include amp-form.html %} {% include amp-sidebar.html %} {% include amp-boilerplate.html %}
+    <style amp-custom>
+        {% include amp-custom-gallery.html %}
+    </style>
+</head>
+
+<body>
+    {% include nav.html %}
+    {{ content }}
+    {% include footer.html %}
+    {% include float-button.html %}
+</body>
+
+</html>

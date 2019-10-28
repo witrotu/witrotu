@@ -1,0 +1,49 @@
+---
+layout: price
+title: Harga Sewa | Sewa Mobil Tulungagung | Sewa Motor Tulungagung | Paket Wisata
+photos: https://sewamobiltulungagung.com/img/7-hiace.png
+---
+<section id="pricing" class="section-bg">
+    <div class="container">
+        <div class="section-header">
+            <h3 class="section-title">{{ site.section-5 }}</h3>
+            <span class="section-divider"></span>
+            <!-- <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> -->
+        </div>
+        <div class="row">
+            {% for item in site.data-products %}
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-item wow fadeInUp">
+                    <a class="gallery-popup">
+                        <amp-img lightbox="caption" class="gallery-popup" alt="{{ item.amp-img-alt }}" src="{{ item.amp-img-scr }}" width="{{ item.amp-img-width }}" height="{{ item.amp-img-height }}" layout="{{ item.amp-img-layout }}" aria-describedby="{{ item.text-title }}"></amp-img>
+                    </a>
+                    <div hidden id="{{ item.text-title }}">
+                        {{ item.text-title }}
+                        <br></i>Harga &#58; {{ item.list-1 }}
+                        <br></i>Durasi &#58; {{ item.list-2 }}
+                        <br></i>Harga &#58; {{ item.list-3 }}
+                        <br></i>Durasi &#58; {{ item.list-4 }}
+                        <br></i>{{ item.list-5 }}
+                        <br></i>{{ item.list-6 }}
+                    </div>
+                </div>
+                <div class="box wow fadeInLeft">
+                    <h3>{{ item.text-title }}</h3>
+                    <ul>
+                        <li><i class="ion-android-checkmark-circle"></i>{{ item.list-1 }}</li>
+                        <li><i class="ion-android-checkmark-circle"></i>{{ item.list-2 }}</li>
+                        <li><i class="ion-android-checkmark-circle"></i>{{ item.list-3 }}</li>
+                        <li><i class="ion-android-checkmark-circle"></i>{{ item.list-4 }}</li>
+                        <li><i class="ion-android-checkmark-circle"></i>{{ item.list-5 }}</li>
+                        <li><i class="ion-android-checkmark-circle"></i>{{ item.list-6 }}</li>
+                    </ul>
+                    <a href="https://api.whatsapp.com/send?text=Mau%20Rental%20Mobil%20{{ item.text-title }}%20(Nama)%20(Alamat%20Lengkap)%20&phone={{ site.telephone }}" class="get-started-btn">Pesan</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    </div>
+</section>
+{% include contact.html %}
+</main>

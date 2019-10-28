@@ -1,0 +1,24 @@
+---
+layout: blog
+title: Blog | Sewa Mobil Tulungagung, Sewa Motor Tulungagung dan Paket Wisata
+photos: https://sewamobiltulungagung.com/img/2-new-avanza.png
+---
+<main id="main">
+    <section id="call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 text-center text-lg-left">
+                    <h3 class="cta-title">Blog</h3>
+                    <p class="cta-text">Kami menyajikan informasi terkait wisata, terbaru</p>
+                </div>
+                <div class="col-lg-3 cta-btn-container text-center">
+                    <a class="cta-btn align-middle" href="tel:{{ site.telephone }}">{{ site.section-4-b }}</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% for post in site.posts %}
+        <a href="{{ post.url }}">{{ post.excerpt }}</a>
+    {% endfor %}
+    {% include contact.html %}
+</main>

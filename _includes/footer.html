@@ -1,0 +1,30 @@
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 text-lg-left text-center">
+                <div class="copyright">
+                    {{ site.copyright }}
+                </div>
+                <div class="credits">
+                    Designed by <a href="https://klikada.com/"><amp-img src="/img/klikada-panjang.svg" width="75" height="15" layout="fixed" alt="klikada.com"></amp-img></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+                    <a href="#intro" class="scrollto">Home</a>
+                    <a href="#about" class="scrollto">About</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <amp-install-serviceworker
+      src="{{ site.siteurl }}/sw.js"
+      data-iframe-src="{{ site.siteurl }}/sw.html"
+      layout="nodisplay">
+    </amp-install-serviceworker>
+    <noscript>
+        Aktifkan Javascript di browser Anda ...
+    </noscript>
+</footer>

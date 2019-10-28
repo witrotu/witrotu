@@ -1,0 +1,43 @@
+---
+layout: home
+title: Paket Wisata | Sewa Mobil Tulungagung, Sewa Motor Tulungagung dan Paket Wisata
+photos: https://sewamobiltulungagung.com/img/gili-ketapang.jpg
+---
+<main id="main">
+    <section id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-title">{{ site.section-7 }}</h3>
+                <span class="section-divider"></span>
+                <!-- <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> -->
+            </div>
+            <div class="row">
+                {% for item in site.data-paket-wisata %}
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item wow fadeInUp">
+                        <a class="gallery-popup">
+                            <amp-img lightbox="caption" class="gallery-popup" alt="{{ item.amp-img-alt }}" src="{{ item.amp-img-scr }}" width="{{ item.amp-img-width }}" height="{{ item.amp-img-height }}" layout="{{ item.amp-img-layout }}" aria-describedby="{{ item.text-title }}"></amp-img>
+                        </a>
+                        <div hidden id="{{ item.text-title }}">
+                            {{ item.text-title }}
+                        </div>
+                    </div>
+                    <div class="box wow fadeInLeft">
+                        <h3>{{ item.text-title }}</h3>
+                        <ul>
+                            <li><i class="ion-android-checkbox-outline"></i><b>{{ item.list-1 }}</b></li>
+                            <li><i class="ion-android-checkbox-outline"></i><b>{{ item.list-2 }}</b></li>
+                            <li><i class="ion-android-checkbox-outline"></i>{{ item.list-3 }}</li>
+                            <li><i class="ion-android-checkbox-outline"></i>{{ item.list-4 }}</li>
+                            <li><i class="ion-android-checkbox-outline"></i>{{ item.list-5 }}</li>
+                            <li><i class="ion-android-checkbox-outline"></i>{{ item.list-6 }}</li>
+                        </ul>
+                        <a href="{{ item.url }}" class="get-started-btn">Detail Trip</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% include contact.html %}
+</main>

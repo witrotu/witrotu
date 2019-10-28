@@ -1,0 +1,215 @@
+---
+layout: home
+title: Sewa Mobil Tulungagung, Sewa Motor Tulungagung dan Paket Wisata, Rental Mobil Tulungagung
+photos: https://sewamobiltulungagung.com/img/1-mobilio.png
+---
+<section id="intro">
+    <div class="intro-carousel">
+        <amp-carousel layout="responsive" width="360" height="170" type="slides" autoplay delay="2000" lightbox>
+            {% for item in site.data-slider %}
+            <li>
+                <amp-img src="{{ item.amp-img }}" width="{{ item.width }}" height="{{ item.height }}" alt="{{ item.alt }}" layout="responsive">
+                </amp-img>
+            </li>
+            {% endfor %}
+        </amp-carousel>
+    </div>
+    <div class="intro-text">
+        <h2>{{ site.section-1 }}</h2>
+        <p>{{ site.section-1-a }} {{ site.section-1-b }}</p>
+        <a href="{{ site.whatsapp-api }}" class="btn-get-started scrollto">Klik Whatsapp Kami</a>
+    </div>
+</section>
+<main id="main">
+    <section id="about" class="section-bg">
+        <div class="container-fluid">
+            <div class="section-header">
+                <h3 class="section-title">{{ site.section-2 }}</h3>
+                <span class="section-divider"></span>
+                <p class="section-description">
+                    {{ site.section-2-a }}
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 text-center text-lg-left">
+                    <h3 class="cta-title">{{ site.section-4 }}</h3>
+                    <p class="cta-text">{{ site.section-4-a }}</p>
+                </div>
+                <div class="col-lg-3 cta-btn-container text-center">
+                    <a class="cta-btn align-middle" href="tel:{{ site.telephone }}">{{ site.section-4-b }}</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pricing" class="section-bg">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-title">{{ site.section-5 }}</h3>
+                <span class="section-divider"></span>
+                <!-- <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> -->
+            </div>
+            <div class="row">
+                {% for item in site.data-products limit:6 %}
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item wow fadeInUp">
+                        <a class="gallery-popup">
+                            <amp-img lightbox="caption" class="gallery-popup" alt="{{ item.amp-img-alt }}" src="{{ item.amp-img-scr }}" width="{{ item.amp-img-width }}" height="{{ item.amp-img-height }}" layout="{{ item.amp-img-layout }}" aria-describedby="{{ item.text-title }}"></amp-img>
+                        </a>
+                        <div hidden id="{{ item.text-title }}">
+                            {{ item.text-title }}
+                            <br></i>Harga &#58; {{ item.list-1 }}
+                            <br></i>Durasi &#58; {{ item.list-2 }}
+                            <br></i>Harga &#58; {{ item.list-3 }}
+                            <br></i>Durasi &#58; {{ item.list-4 }}
+                            <br></i>{{ item.list-5 }}
+                            <br></i>{{ item.list-6 }}
+                        </div>
+                    </div>
+                    <div class="box wow fadeInLeft">
+                        <h3>{{ item.text-title }}</h3>
+                        <ul>
+                            <li><i class="ion-android-checkmark-circle"></i>{{ item.list-1 }}</li>
+                            <li><i class="ion-android-checkmark-circle"></i>{{ item.list-2 }}</li>
+                            <li><i class="ion-android-checkmark-circle"></i>{{ item.list-3 }}</li>
+                            <li><i class="ion-android-checkmark-circle"></i>{{ item.list-4 }}</li>
+                            <li><i class="ion-android-checkmark-circle"></i>{{ item.list-5 }}</li>
+                            <li><i class="ion-android-checkmark-circle"></i>{{ item.list-6 }}</li>
+                        </ul>
+                        <a href="https://api.whatsapp.com/send?text=Mau%20Rental%20Mobil%20{{ item.text-title }}%20(Nama)%20(Alamat%20Lengkap)%20&phone={{ site.telephone }}" class="get-started-btn">Pesan</a>
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="col-lg-12 pull-right"><a href="/harga-sewa/" class="get-started-btn scrollto pull-right">Next</a></div>
+            </div>
+        </div>
+    </section>
+    <section id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-title">{{ site.section-7 }}</h3>
+                <span class="section-divider"></span>
+                <!-- <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> -->
+            </div>
+            <div class="row">
+                {% for item in site.data-paket-wisata limit:3 %}
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item wow fadeInUp">
+                        <a class="gallery-popup">
+                            <amp-img lightbox="caption" class="gallery-popup" alt="{{ item.amp-img-alt }}" src="{{ item.amp-img-scr }}" width="{{ item.amp-img-width }}" height="{{ item.amp-img-height }}" layout="{{ item.amp-img-layout }}" aria-describedby="{{ item.text-title }}"></amp-img>
+                        </a>
+                        <div hidden id="{{ item.text-title }}">
+                            {{ item.text-title }}
+                        </div>
+                    </div>
+                    <div class="box wow fadeInLeft">
+                        <h3>{{ item.text-title }}</h3>
+                        <ul>
+                            <li><i class="ion-android-checkbox-outline"></i><b>{{ item.list-1 }}</b></li>
+                            <li><i class="ion-android-checkbox-outline"></i><b>{{ item.list-2 }}</b></li>
+                            <li><i class="ion-android-checkbox-outline"></i>{{ item.list-3 }}</li>
+                            <li><i class="ion-android-checkbox-outline"></i>{{ item.list-4 }}</li>
+                            <li><i class="ion-android-checkbox-outline"></i>{{ item.list-5 }}</li>
+                            <li><i class="ion-android-checkbox-outline"></i>{{ item.list-6 }}</li>
+                        </ul>
+                        <a href="{{ item.url }}" class="get-started-btn">Detail Trip</a>
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="col-lg-12 pull-right"><a href="/paket-wisata/" class="get-started-btn scrollto pull-right">Next</a></div>
+            </div>
+        </div>
+    </section>
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-4">
+                    <div class="section-header wow fadeIn" data-wow-duration="1s">
+                        <h3 class="section-title">{{ site.section-3 }}</h3>
+                        <span class="section-divider"></span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 features-img">
+                    <amp-img alt="Sewa Mobil Tulungagung" src="img/product-features.png" width="330" height="489" layout="responsive" class="wow fadeInLeft"></amp-img>
+                </div>
+                <div class="col-lg-8 col-md-7 ">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 box wow fadeInRight">
+                            <div class="icon">
+                                <amp-img alt="Sewa Mobil Tulungagung" src="img/call.png" width="64" height="64" layout="fixed" class="wow fadeInLeft"></amp-img>
+                            </div>
+                            <h4 class="title"><a href="">{{ site.section-3-a }}</a></h4>
+                            <p class="description">{{ site.section-3-a-des }}</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.1s">
+                            <div class="icon">
+                                <amp-img alt="Sewa Mobil Tulungagung" src="img/calendar.png" width="64" height="64" layout="fixed" class="wow fadeInLeft"></amp-img>
+                            </div>
+                            <h4 class="title"><a href="">{{ site.section-3-b }}</a></h4>
+                            <p class="description">{{ site.section-3-b-des }}</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.2s">
+                            <div class="icon">
+                                <amp-img alt="Sewa Mobil Tulungagung" src="img/cash.png" width="64" height="64" layout="fixed" class="wow fadeInLeft"></amp-img>
+                            </div>
+                            <h4 class="title"><a href="">{{ site.section-3-c }}</a></h4>
+                            <p class="description">{{ site.section-3-c-des }}</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.3s">
+                            <div class="icon">
+                                <amp-img alt="Sewa Mobil Tulungagung" src="img/automobile.png" width="64" height="64" layout="fixed" class="wow fadeInLeft"></amp-img>
+                            </div>
+                            <h4 class="title"><a href="">{{ site.section-3-d }}</a></h4>
+                            <p class="description">{{ site.section-3-d-des }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="faq" class="section-bg">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-title">{{ site.section-6 }}</h3>
+                <span class="section-divider"></span>
+                <!-- <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> -->
+            </div>
+            <ul id="faq-list" class="wow fadeInUp">
+                <amp-accordion>
+                    {% for item in site.data-faq %}
+                    <section>
+                        <header class="accordion-header">
+                            <h4 class="accordion-title">{{ item.question }}</h4>
+                        </header>
+                        <div class="accordion-content">
+                            <p>{{ item.answer }}</p>
+                        </div>
+                    </section>
+                    {% endfor %}
+                </amp-accordion>
+            </ul>
+        </div>
+    </section>
+    <section id="gallery">
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                {% for item in site.data-gallery limit:6 %}
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item wow fadeInUp">
+                        <a class="gallery-popup">
+                            <amp-img lightbox class="gallery-popup" alt="{{ item.amp-img-alt }}" src="{{ item.amp-img-scr }}" width="{{ item.amp-img-width }}" height="{{ item.amp-img-height }}" layout="{{ item.amp-img-layout }}" aria-describedby="{{ item.amp-img-alt }}"></amp-img>
+                        </a>
+                        <div hidden id="{{ item.amp-img-alt }}">
+                            {{ item.amp-img-alt }}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    {% include contact.html %}
+</main>
